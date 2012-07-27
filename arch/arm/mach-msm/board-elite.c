@@ -1509,7 +1509,7 @@ static struct camera_flash_info msm_camera_sensor_s5k3h2yx_flash_info = {
 
 static struct camera_flash_cfg msm_camera_sensor_s5k3h2yx_flash_cfg = {
 	.low_temp_limit		= 5,
-	.low_cap_limit		= 15,
+	.low_cap_limit		= 5,
 	.flash_info             = &msm_camera_sensor_s5k3h2yx_flash_info,
 };
 /* Andrew_Cheng linear led 20111205 ME */
@@ -6551,9 +6551,9 @@ static struct pm8xxx_led_configure pm8921_led_info[] = {
 		.duites_size 	= 8,
 		.duty_time_ms 	= 64,
 		.lut_flag 	= PM_PWM_LUT_RAMP_UP | PM_PWM_LUT_PAUSE_HI_EN,
-		.out_current    = 3,
-		.duties		= {0, 15, 30, 45, 60, 75, 90, 100,
-				100, 90, 75, 60, 45, 30, 15, 0,
+		.out_current    = 2,
+		.duties		= {0, 9, 18, 27, 36, 45, 54, 60,
+				60, 54, 45, 36, 27, 18, 9, 0,
 				0, 0, 0, 0, 0, 0, 0, 0,
 				0, 0, 0, 0, 0, 0, 0, 0,
 				0, 0, 0, 0, 0, 0, 0, 0,
